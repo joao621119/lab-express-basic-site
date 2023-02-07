@@ -1,4 +1,5 @@
 //Require express
+const { request, response } = require("express");
 const express = require("express");
 
 const app = express();
@@ -15,7 +16,7 @@ app.get("/home", (request, response) => {
 
 //About
 app.get("/about", (request, response) => {
-  response.sendFile(__dirname + "/views/about");
+  response.sendFile(__dirname + "/views/about.html");
 });
 
 //Works
@@ -24,9 +25,14 @@ app.get("/works", (request, response) => {
 });
 
 //Bonus - Photo gallery
-app.get("/photogalley", (request, response) => {
+app.get("/photogallery", (request, response) => {
   response.sendFile(__dirname + "/views/photogallery.html");
 });
+
+//Bonus - Contact
+app.get("/contact", (request, response) => {
+  response.sendFile(__dirname + "/views/contact.html")
+})
 
 //Listen
 app.listen(3000, () => console.log("Server running on port 3000"));

@@ -1,4 +1,146 @@
+/* Whole html */
+
 body{
-    background-color: aquamarine;
-    color: blueviolet;
+    margin: 0;
+    color: white;
+    font-family: 'Press Start 2P';
+    font-size: 8px;
+    background: url("/images/space.jpeg")no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
+
+ul{
+    list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1{
+    font-size: 25px;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Navbar */
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: orange;
+    height: 50px;
+}
+
+#steveLogo{
+    width: 85px;
+}
+
+#steve{
+    font-size: 25px;
+}
+
+.menu{
+    display: flex;
+    gap: 1em;
+    font-size: 12px;
+}
+
+.menu li{
+    padding: 5px 14px;
+}
+
+.photos{
+    position: relative;
+}
+
+.photos:hover .dropdown{
+    display: block;
+ }
+
+.dropdown{
+    background-color: orange;
+    padding: 1em 0;
+    position: absolute;
+    display: none;
+    border-radius: 8px;
+    top: 20px;
+}
+
+.dropdown li{
+    padding: 0.5em 0.8em;
+    width: 12em;
+    text-align: center;
+}
+
+/* Home Page */
+
+/* About */
+
+#aboutsection{
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#stephengif{
+    width: 200px;
+    border-radius: 30%;
+}
+
+#aboutarticle{
+    width: 750px;
+    font-size: 14px;
+}
+
+/* Works */
+
+#worksh2{
+    font-size: 20px;
+    padding: 0 0 0 40px;
+}
+
+#favbook{
+    font-size: 16px;
+    padding: 35px 0 0 45px;
+}
+
+#favbook li{
+    margin: 25px 0;
+}
+
+#contactshr{
+    margin-top: 20px;
+    border: 2px solid white;
+    border-radius: 2px;
+    width: 75%;
+}
+
+/* Contact */
+
+#contactdiv{
+    padding: 20px 0 0 40px;
+    font-size: 12px;
+}
+
+#home{
+    font-size: 20px;
+    text-align: center;
+    padding: 40px 100px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .map-frame {
+    height: 340px;
+    width: 60%;
+  }
